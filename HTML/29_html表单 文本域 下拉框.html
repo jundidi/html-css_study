@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>表单 文本域 下拉框</title>
+</head>
+<body>
+    <form action="https://search.jd.com/search" target="_blank" method="get">
+        账户：<input type="text" name="account" value="zhangsan" maxlength="10"><br>
+        密码：<input type="password" name="password" maxlength="10"><br>
+        性别：
+        <!-- 单选框必须写value和name-->
+        <!-- checked表示默认勾选 -->
+        <input type="radio" name="gender" value="male" checked>男
+        <input type="radio" name="gender" value="female">女
+        <br>
+        爱好：
+        <!-- checkbox必须写name和value -->
+        <!-- checked表示默认勾选 -->
+        <input type="checkbox" name="hobby" value="cy" checked>抽烟
+        <input type="checkbox" name="hobby" value="hj">喝酒
+        <input type="checkbox" name="hobby" value="tt">烫头
+        <br>
+        其他：
+        <!-- 文本域：cols控制宽，rows控制长 -->
+        <textarea cols="20" rows="3"></textarea>
+        <br>
+
+        <!-- 隐藏域 -->
+        <input type="hidden" name="form" value="toutiao">
+
+        <!-- 下拉框,默认值要加selected -->
+        籍贯：
+        <select name="place">
+            <option value="gd">广东</option>
+            <option value="sd">山东</option>
+            <option value="gx" selected>广西</option>
+            <option value="cq">重庆</option>
+        </select>
+        <br><br>
+
+        <!-- 确认按钮的第一种写法： -->
+        <!-- button属性不要写name -->
+        <button>确认</button>
+        <!-- 确认按钮的第二种写法： -->
+        <!-- submit类型不要写name -->
+        <input type="submit" value="确认">
+        <br>
+        
+        <!-- 重置按钮 -->
+        <!-- 第一种写法 -->
+        <button type="reset">重置</button>
+        <!-- 第二种写法 -->
+        <input type="reset" value="重置">        
+        
+        <!--普通按钮 -->
+        <input type="button" value="检测账户是否被注册">
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>超链接</title>
+    <style>
+    </style>
+</head>
+<body>
+    
+    <p>
+        <!-- href表示跳转到的页面，target表示跳转后新标签的打开方式 -->
+        <!-- "_blank会新起一个标签","_self是在原页签打开" -->
+        <a href="https://www.baidu.com" target="_blank">去秒杀</a> 
+        <a href="https://www.baidu.com" target="_self">去秒杀</a>
+    </p>
+    
+    <p>
+        <!-- 浏览器不可以直接打开文件，打开提示下载 -->
+        <a href="文件路径/url">xxx文件，如zip格式</a>
+        <!-- 浏览器可以直接打开，但是强制触发下载 -->
+        <a href="文件路径/url" download>下载xxx文件</a>
+    </p>
+
+    <p>
+        <!-- 跳转锚点,href中要写"#+名字",而且要写在a标签下，实际效果会跳转到xxx位置 -->
+        <a href="#xxx"></a>
+        <a name="xxx"></a>
+        
+        <!-- 最好使用id来操作,锚点会准确很多，且id的值最好不要以数字开头 -->
+        <a href="#yyy"></a>
+        <a id="yyy"></a>
+
+        <!-- 打开新页面并直接跳转到该页面的具体锚点处 -->
+        <a href="https://www.baidu.com#123"></a> 
+        
+        <!-- a标签添加js脚本 -->
+        <a href="javascript:alert(666);">脚本</a>
+
+        <!-- 回到顶部 -->
+        <a href="#">回到顶部</a>
+        <a href="">刷新页面</a>
+
+    </p>
+
+    <p>
+
+    </p>
+
+</body>
+</html>

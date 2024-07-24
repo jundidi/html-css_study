@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>表格</title>
+</head>
+<body>
+    <!-- 表格 -->
+    <!-- border为1表示1px的边框 -->
+    <!-- 这里的height是指至少500 -->
+    <table border="1" width="500" height="500" cellspacing="0">
+        <!-- 表格标题 -->
+        <!-- caption写不了什么属性 -->
+        <caption>学生信息</caption>
+        <!-- 表格头部 -->
+        <!-- thead可以修改height -->
+        <!-- 这里的thead是指具体为高度为500 -->
+        <!-- align表示水平居中方式：left center right，默认值为center -->
+        <!-- valign表示垂直居中方式：top middle bottom，默认值为middle -->
+        <thead height="500" align="left" valign="top">
+            <tr>
+                <!-- 有width height align和valign -->
+                <th>姓名</th>
+                <th>性别</th>
+                <th>年龄</th>
+                <th>民族</th>
+                <th>政治面貌</th>
+            </tr>
+        </thead>
+        <!-- 表格主体 -->
+        <!-- 属性与thead一致，有height align和valign -->
+        <tbody height="1000" align="left" valign="top">
+            <!-- 属性与thead一致，有height align和valign -->
+            <tr height="500" align="middle" valign="top">
+                <td>张三</td>
+                <td>男</td>
+                <td>18</td>
+                <td>汉</td>
+                <td>团员</td>
+            </tr>
+            <tr>
+                <td>李四</td>
+                <td>女</td>
+                <td>20</td>
+                <td>汉</td>
+                <td>党员</td>
+            </tr>
+        </tbody>
+        <!-- 表格脚注 -->
+        <!-- 属性与thead一致，有height align和valign -->
+        <tfoot height="500" align="left" valign="top">
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>共计：2人</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
